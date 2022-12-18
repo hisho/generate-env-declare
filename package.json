@@ -1,0 +1,48 @@
+{
+  "name": "@hisho/generate-env-declare",
+  "version": "0.0.1",
+  "description": ".envの型定義を生成する",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "gngenerate-env-declare": "bin/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "dev": "npm run build && ts-node ./debug/index.ts",
+    "format": "prettier --check . --write",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hisho/generate-env-declare.git"
+  },
+  "keywords": [],
+  "author": "hisho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hisho/generate-env-declare/issues"
+  },
+  "homepage": "https://github.com/hisho/generate-env-declare#readme",
+  "devDependencies": {
+    "@tsconfig/strictest": "^1.0.2",
+    "@types/lodash": "^4.14.191",
+    "@types/minimist": "^1.2.2",
+    "@types/node": "^18.11.17",
+    "@types/prettier": "^2.7.1",
+    "@types/rimraf": "^3.0.2",
+    "child_process": "^1.0.2",
+    "prettier": "^2.8.1",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "chokidar": "^3.5.3",
+    "dotenv": "^16.0.3",
+    "lodash": "^4.17.21",
+    "minimist": "^1.2.7"
+  }
+}
