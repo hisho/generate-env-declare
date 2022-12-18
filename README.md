@@ -24,8 +24,8 @@ $ yarn add -D @hisho/generate-env-declare
 ```json
 {
   "scripts": {
-    "watch:image": "generate-env-declare --watch",
-    "build:image": "generate-env-declare"
+    "watch:generate-env-declare": "generate-env-declare --watch",
+    "build:generate-env-declare": "generate-env-declare"
   }
 }
 ```
