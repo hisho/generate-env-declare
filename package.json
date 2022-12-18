@@ -4,7 +4,7 @@
   "description": ".envの型定義を生成する",
   "types": "dist/index.d.ts",
   "bin": {
-    "gngenerate-env-declare": "bin/index.js"
+    "generate-env-declare": "bin/index.js"
   },
   "files": [
     "dist"
