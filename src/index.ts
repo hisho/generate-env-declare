@@ -71,6 +71,8 @@ export const main = (args: string[]) => {
     string: ['watch'],
   })
 
+  console.log('Building...')
+  build()
   if (argv.watch !== undefined) {
     chokidar
       .watch(
@@ -83,8 +85,5 @@ export const main = (args: string[]) => {
         console.log('Watching...', path)
         build()
       })
-  } else {
-    console.log('Building...')
-    build()
   }
 }
