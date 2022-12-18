@@ -1,6 +1,6 @@
 {
   "name": "@hisho/generate-env-declare",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": ".envの型定義を生成する",
   "types": "dist/index.d.ts",
   "bin": {
